@@ -1,5 +1,4 @@
 import React from 'react';
-import SearchPage from '../SearchPage/SearchPage';
 
 export default function Navbar() {
     return (
@@ -13,6 +12,7 @@ export default function Navbar() {
                     <li className="nav-item">
                         <a className="nav-link" href="/app">Gifts</a> {/* Updated Link to /app */}
                     </li>
+
                     <li className="nav-item">
                         <a className="nav-link" href="/app/search">Search</a> {/* Link to /app/search */}
                     </li>
