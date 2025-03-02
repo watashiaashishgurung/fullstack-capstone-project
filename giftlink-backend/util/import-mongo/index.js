@@ -49,7 +49,8 @@ async function loadData() {
     }
 }
 
-loadData();
+// Remove this line to prevent automatic execution
+// loadData();
 
 module.exports = {
     loadData,
