@@ -24,7 +24,7 @@ body::before {
     z-index: -1; /* Place it behind the content */
 }
 
-.content {
+.home-container {
     position: relative;
     font-weight: 600;
     z-index: 2; /* Higher z-index to ensure content is above the blurred background */

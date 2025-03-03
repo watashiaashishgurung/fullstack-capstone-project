@@ -28,7 +28,6 @@ function ProductDetailsPage() {
             }
         };
 
-
         fetchProduct();
     }, [productId, navigate]);
 
@@ -38,6 +37,7 @@ function ProductDetailsPage() {
 
     return (
         <div className="container mt-5">
+            <button onClick={() => navigate(-1)} className="btn btn-secondary mb-3">Back</button> {/* Add this button */}
             <div className="row">
                 <div className="col-md-6">
                     {product.image ? (
