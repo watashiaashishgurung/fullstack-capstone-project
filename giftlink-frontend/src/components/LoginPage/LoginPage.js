@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import './LoginPage.css';
 
@@ -8,8 +8,8 @@ function LoginPage() {
 
     const handleLogin = async (e) => {
         e.preventDefault();
-}
-
+        // Add login logic here
+    }
 
     return (
         <div className="container mt-5">

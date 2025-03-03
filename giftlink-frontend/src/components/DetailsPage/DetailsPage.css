@@ -1,7 +1,7 @@
 /* Style for image placeholder */
 .image-placeholder-large {
     width: 100%;
-    height: auto;
+    height: 400px; /* Increase the height for a larger display */
     background-color: #f0f0f0;
     display: flex;
     align-items: center;
@@ -10,7 +10,7 @@
 
 .image-placeholder-large img {
     max-width: 100%;
-    height: auto;
+    max-height: 100%; /* Ensure the image fits within the placeholder */
     display: block;
     margin: 0 auto;
 }
@@ -18,14 +18,14 @@
 /* Style for product image */
 .product-image-large {
     width: 100%;
-    height: auto;
+    height: 400px; /* Increase the height for a larger display */
     object-fit: cover;
 }
 
 /* Style for 'no image available' placeholder */
 .no-image-available-large {
     width: 100%;
-    height: auto;
+    height: 400px; /* Increase the height for a larger display */
     background-color: #e0e0e0;
     color: #a0a0a0;
     display: flex;
@@ -60,4 +60,33 @@
     background-color: #f9f9f9;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for individual comment */
+.comment {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for comment author */
+.comment-author {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #007bff;
+}
+
+/* Style for comment text */
+.comment-text {
+    font-size: 1em;
+    color: #333;
+}
+
+/* Style for comment date */
+.comment-date {
+    font-size: 0.8em;
+    color: #999;
+    margin-top: 5px;
 }

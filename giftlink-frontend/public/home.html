@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GiftLink Home</title>
+    <link rel="stylesheet" href="/static/home.css"> <!-- Ensure this link is correct and placed first -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/static/home.css">
 </head>
 <body>
-    <div class="container my-5">
+    <div class="container my-5 home-container"> <!-- Add a unique class -->
         <div class="text-center">
             <!-- Task 1: Add the main heading -->
             <h1 class="display-4 mb-3"> GiftLink</h1>            
@@ -20,8 +20,18 @@
                 <p class="lead">"Sharing is the essence of community. It is through giving that we enrich and perpetuate both our lives and the lives of others."</p>
             </blockquote>
             <!-- Task 4: Add the 'Get Started' button -->
-            <a href="/app" class="btn btn-primary">Get Started</a>
+            <a id="getStartedButton" href="/app" class="btn btn-primary" disabled>Get Started</a>
         </div>
     </div>
+    <script>
+        // Disable the button initially
+        const getStartedButton = document.getElementById('getStartedButton');
+        getStartedButton.disabled = true;
+
+        // Enable the button after 5 seconds
+        setTimeout(() => {
+            getStartedButton.disabled = false;
+        }, 5000);
+    </script>
 </body>
 </html>

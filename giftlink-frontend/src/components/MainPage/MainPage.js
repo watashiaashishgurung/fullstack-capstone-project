@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import {urlConfig} from '../../config';
+import { urlConfig } from '../../config';
 
 function MainPage() {
-    const [gifts, setGifts] = useState([])
+    const [gifts, setGifts] = useState([]);
     const navigate = useNavigate();
 
     useEffect(() => {
-        // fetch all gifts
+        // Fetch all gifts
         const fetchGifts = async () => {
             try {
-                let url = `${urlConfig.backendUrl}/api/gifts`
+                let url = `${urlConfig.backendUrl}/api/gifts`;
                 const response = await fetch(url);
                 if (!response.ok) {
-                    //something went wrong
-                    throw new Error(`HTTP error; ${response.status}`)
+                    // Something went wrong
+                    throw new Error(`HTTP error; ${response.status}`);
                 }
                 const data = await response.json();
                 setGifts(data);
@@ -73,4 +73,5 @@ function MainPage() {
         </div>
     );
 }
+
 export default MainPage;
