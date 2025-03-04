@@ -40,7 +40,7 @@ async function loadData() {
             const insertResult = await collection.insertMany(data);
             console.log('Inserted documents:', insertResult.insertedCount);
         } else {
-            console.log("Gifts already exists in DB")
+            console.log("Gifts already exists in DB");
         }
     } catch (err) {
         console.error(err);
