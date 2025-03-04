@@ -57,7 +57,7 @@ The GiftLink application follows a **structured directory architecture**, ensuri
 
 ```
 📂 fullstack-capstone-project
- ┣ 📂 ISSUE_TEMPLATE
+ ┣ 📂 github
  ┣ 📂 giftlink-backend (Express Backend)
  ┣ 📂 giftlink-frontend (React Frontend)
  ┣ 📂 sentiment (Sentiment Analysis Services)
@@ -71,13 +71,18 @@ The GiftLink application follows a **structured directory architecture**, ensuri
 ### Fullstack Capstone Project File-structure
 
 <details>
-  <summary>ISSUE_TEMPLATE</summary>
+  <summary>.github</summary>
 
-- [`user-story.md`](user-story.md)
+  - **workflows/**
+  - [`workflows`](workflows)
+  - **ISSUE_template/**
+  - [`user-story.md`](user-story.md)
 </details>
 <details>
   <summary>giftlink-backend</summary>
   
+  - **Dockerfile/**
+
   - **models/**
     - `db.js`
   - **routes/**
@@ -104,7 +109,9 @@ The GiftLink application follows a **structured directory architecture**, ensuri
 
 <details>
   <summary>giftlink-frontend</summary>
-  
+
+  - **Dockerfile/**
+
   - **node_modules/**
   - **public/**
     - **images/**
@@ -223,4 +230,3 @@ This project is licensed under the [`LICENSE`](./LICENSE)
 
 ## Repository Link
 🔗 **[GiftLink GitHub Repository](https://github.com/watashiaashishgurung/fullstack-capstone-project.git)**
-
