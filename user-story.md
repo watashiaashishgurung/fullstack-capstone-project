@@ -200,10 +200,20 @@ Then users should be able to access it via a public URL
 ---
 # 11 Project documentation 
 
-**As a**
-Full-Stack Developer
-**I need**
-A structured and accessible documentation system for user projects  
-**So that**
-Users can easily refer to technical specifications, API endpoints, deployment processes, and troubleshooting guides to maintain and extend their projects effectively.  
+**As a** Full-Stack Developer  
+**I need** a structured and accessible documentation system for user projects  
+**So that** users can easily refer to technical specifications, API endpoints, deployment processes, and troubleshooting guides to maintain and extend their projects effectively.  
+
+### Details and Assumptions
+- Documentation should cover all aspects of the project, including setup, development, and deployment
+- Should be easily accessible and well-organized
+- Include examples and best practices
+- Regular updates to keep the documentation current
+
+### Acceptance Criteria
+```gherkin
+Given a completed project
+When users refer to the documentation
+Then they should find clear and comprehensive information on technical specifications, API endpoints, deployment processes, and troubleshooting guides
+```
 ---
