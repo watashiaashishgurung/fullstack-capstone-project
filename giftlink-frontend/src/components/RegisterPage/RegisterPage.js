@@ -4,7 +4,7 @@ import { urlConfig } from '../../config';
 //{{Insert code here}} //Task 2: Import useAppContext `giftlink-frontend/context/AuthContext.js`
 import { useAppContext} from '../../context/AuthContext';
 //{{Insert code here}} //Task 3: Import useNavigate from `react-router-dom` to handle navigation after successful registration.
-import { json, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 import './RegisterPage.css';
 
