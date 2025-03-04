@@ -46,6 +46,7 @@ jobs:
 
       - name: Update browserslist database
         run: npx update-browserslist-db@latest
+        working-directory: ./giftlink-frontend
 
       - name: Run build
         run: |
