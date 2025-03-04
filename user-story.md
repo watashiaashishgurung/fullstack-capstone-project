@@ -1,121 +1,7 @@
-# User Stories for Capstone Project
+## User Stories
 
----
-# Fullstack Capstone Project File-structure
+# 1 Finish user stories
 
-<details>
-  <summary>giftlink-backend</summary>
-  
-  - **models/**
-    - `db.js`
-  - **routes/**
-    - `auth.js`
-    - `authRoutes.js`
-    - `giftRoutes.js`
-    - `searchRoutes.js`
-  - **util/**
-  - **import-mongo/**
-    - `.env`
-    - `.gitignore`
-    - `gifts.json`
-    - `index.js`
-    - `package-lock.json`
-    - `package.json`
-    - `test-env.js`
-  - `.env`
-  - `.gitignore`
-  - `app.js`
-  - `logger.js`
-  - `package-lock.json`
-  - `package.json`
-</details>
-
-<details>
-  <summary>giftlink-frontend</summary>
-  
-  - **node_modules/**
-  - **public/**
-    - **images/**
-    - **static/**
-    - `favicon.ico`
-    - `home.html`
-    - `index.html`
-    - `logo192.png`
-    - `logo512.png`
-    - `manifest.json`
-    - `robots.txt`
-  - **src/**
-    - **components/**
-      - **DetailsPage/**
-        - `DetailsPage.css`
-        - `DetailsPage.js`
-      - **LandingPage/**
-        - `LandingPage.css`
-        - `LandingPage.js`
-      - **LoginPage/**
-        - `LoginPage.css`
-        - `LoginPage.js`
-      - **MainPage/**
-        - `MainPage.js`
-      - **Navbar/**
-        - `Navbar.js`
-      - **ProductDetailsPage/**
-        - `ProductDetailsPage.js`
-      - **Profile/**
-        - `Profile.css`
-        - `Profile.js`
-      - **RegisterPage/**
-        - `RegisterPage.css`
-        - `RegisterPage.js`
-      - **SearchPage/**
-        - `SearchPage.css`
-        - `SearchPage.js`
-    - **context/**
-      - `AuthContext.js`
-    - `App.css`
-    - `App.js`
-    - `config.js`
-    - `index.css`
-    - `index.js`
-</details>
-
-<details>
-  <summary>sentiment</summary>
-  
-- **`index.js`/**
-- **`package-lock.json`/**
-- **`package.json`/**
-</details>
-
-<details>
-  <summary> .gitignore</summary>
-
-- `.gitignore`
-</details>
-
-<details>
-  <summary> LICENSE</summary>
-
-- [`LICENSE`](./LICENSE)
-</details>
-
-<details>
-    <summary>README.md</summary>
-
-- [`README.md`](./README.md)
-
-
-</details>
-  <summary>user-story.md</summary>
-
-- [`user-story.md`](user-story.md)
-</details>
-
-
- 
-
-
-## 1. Finish User Stories *(Label: Backlog)*
 **As a** project manager  
 **I need** to complete and finalize all user stories  
 **So that** the development team has clear, structured tasks to follow  
@@ -130,10 +16,10 @@ Given a project planning phase
 When I create and organize user stories
 Then the development team can refer to them for implementation
 ```
-
 ---
+---
+# 2 Initialize and populate Mongo DB
 
-## 2. Initialize and Populate MongoDB *(Label: New)*
 **As a** database administrator  
 **I need** to set up and seed the MongoDB database  
 **So that** the application has the necessary data to function  
@@ -148,10 +34,10 @@ Given a MongoDB database instance
 When collections are created and seeded with sample data
 Then the application can access and manipulate data successfully
 ```
-
 ---
+---
+# 3 Run Skeleton Application
 
-## 3. Run Skeleton Application *(Label: Icebox)*
 **As a** developer  
 **I need** to run the base application with minimal components  
 **So that** I can verify the initial setup is working correctly  
@@ -166,10 +52,10 @@ Given a skeleton application setup
 When I run the app
 Then it starts without errors and basic routes function
 ```
-
 ---
+---
+# 4 Implement a landing page and Navigation
 
-## 4. Implement a Landing Page and Navigation *(Label: Backlog)*
 **As a** front-end developer  
 **I need** to create a landing page with navigation  
 **So that** users can access different sections of the application  
@@ -184,10 +70,10 @@ Given a user visits the application
 When they land on the homepage
 Then they should see a clear navigation menu
 ```
-
 ---
+---
+# 5 Add Authentification Components and Logic 
 
-## 5. Add Authentication Components and Logic *(Label: Technical Debt)*
 **As a** back-end developer  
 **I need** to implement user authentication  
 **So that** only authorized users can access certain features  
@@ -202,10 +88,10 @@ Given a new user
 When they register with valid credentials
 Then they should be able to log in securely
 ```
-
 ---
+---
+# 5 Implement gift details page
 
-## 6. Implement Gift Details Page *(Label: New)*
 **As a** front-end developer  
 **I need** to create a detailed view for each gift  
 **So that** users can see more information before making a request  
@@ -220,10 +106,10 @@ Given a user browsing gifts
 When they click on a gift
 Then they should be redirected to a details page with full information
 ```
-
 ---
+---
+# 6 Implement gift details page
 
-## 7. Implement a Search Component *(Label: Icebox)*
 **As a** user  
 **I need** to search for gifts  
 **So that** I can quickly find items that match my needs  
@@ -238,10 +124,28 @@ Given a user is looking for a specific gift
 When they enter a search query
 Then they should see a filtered list of matching items
 ```
-
 ---
+---
+# 7 Implement a seach component
 
-## 8. Design and Implement the Comments Feature *(Label: Backlog)*
+**As a** user  
+**I need** to search for gifts  
+**So that** I can quickly find items that match my needs  
+
+### Details and Assumptions
+- Users should be able to search by name, category, or location
+- The search should return relevant results
+
+### Acceptance Criteria
+```gherkin
+Given a user is looking for a specific gift
+When they enter a search query
+Then they should see a filtered list of matching items
+```
+---
+---
+# 8 Design and Implement the Comments Feature
+
 **As a** user  
 **I need** to leave comments on gift listings  
 **So that** I can ask questions or express interest in an item  
@@ -256,10 +160,10 @@ Given a logged-in user
 When they leave a comment on a gift
 Then the comment should appear under the listing
 ```
-
 ---
+---
+# 9 Containerize the Services and Applications
 
-## 9. Containerize the Services and Applications *(Label: Technical Debt)*
 **As a** DevOps engineer  
 **I need** to containerize the application  
 **So that** it runs consistently across different environments  
@@ -274,10 +178,10 @@ Given an application ready for deployment
 When I build and run it in containers
 Then it should function identically across all environments
 ```
-
 ---
+---
+# 10 Deploy Backend and Frontend
 
-## 10. Deploy Backend and Frontend *(Label: New)*
 **As a** developer  
 **I need** to deploy the application  
 **So that** users can access it online  
@@ -292,118 +196,14 @@ Given a completed application
 When it is deployed to a cloud environment
 Then users should be able to access it via a public URL
 ```
-
 ---
-# Fullstack Capstone Project File-structure
+---
+# 11 Project documentation 
 
-<details>
-  <summary>giftlink-backend</summary>
-  
-  - **models/**
-    - `db.js`
-  - **routes/**
-    - `auth.js`
-    - `authRoutes.js`
-    - `giftRoutes.js`
-    - `searchRoutes.js`
-  - **util/**
-  - **import-mongo/**
-    - `.env`
-    - `.gitignore`
-    - `gifts.json`
-    - `index.js`
-    - `package-lock.json`
-    - `package.json`
-    - `test-env.js`
-  - `.env`
-  - `.gitignore`
-  - `app.js`
-  - `logger.js`
-  - `package-lock.json`
-  - `package.json`
-</details>
-
-<details>
-  <summary>giftlink-frontend</summary>
-  
-  - **node_modules/**
-  - **public/**
-    - **images/**
-    - **static/**
-    - `favicon.ico`
-    - `home.html`
-    - `index.html`
-    - `logo192.png`
-    - `logo512.png`
-    - `manifest.json`
-    - `robots.txt`
-  - **src/**
-    - **components/**
-      - **DetailsPage/**
-        - `DetailsPage.css`
-        - `DetailsPage.js`
-      - **LandingPage/**
-        - `LandingPage.css`
-        - `LandingPage.js`
-      - **LoginPage/**
-        - `LoginPage.css`
-        - `LoginPage.js`
-      - **MainPage/**
-        - `MainPage.js`
-      - **Navbar/**
-        - `Navbar.js`
-      - **ProductDetailsPage/**
-        - `ProductDetailsPage.js`
-      - **Profile/**
-        - `Profile.css`
-        - `Profile.js`
-      - **RegisterPage/**
-        - `RegisterPage.css`
-        - `RegisterPage.js`
-      - **SearchPage/**
-        - `SearchPage.css`
-        - `SearchPage.js`
-    - **context/**
-      - `AuthContext.js`
-    - `App.css`
-    - `App.js`
-    - `config.js`
-    - `index.css`
-    - `index.js`
-</details>
-
-<details>
-  <summary>sentiment</summary>
-  
-- **`index.js`/**
-- **`package-lock.json`/**
-- **`package.json`/**
-</details>
-
-<details>
-  <summary> .gitignore</summary>
-
-- `.gitignore`
-</details>
-
-<details>
-  <summary> LICENSE</summary>
-
-- [`LICENSE`](./LICENSE)
-</details>
-
-<details>
-    <summary>README.md</summary>
-
-- [`README.md`](./README.md)
-
-
-</details>
-<details>
-  <summary>user-story.md</summary>
-
-- [`user-story.md`](user-story.md)
-</details>
-
-
- 
+**As a**
+Full-Stack Developer
+**I need**
+A structured and accessible documentation system for user projects  
+**So that**
+Users can easily refer to technical specifications, API endpoints, deployment processes, and troubleshooting guides to maintain and extend their projects effectively.  
+---
