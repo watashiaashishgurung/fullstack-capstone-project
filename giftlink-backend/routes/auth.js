@@ -1,3 +1,4 @@
+/*jshint esversion: 8 */
 const express = require('express');
 const { check, validationResult } = require('express-validator');
 const router = express.Router();
