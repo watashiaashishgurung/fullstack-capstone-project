@@ -198,8 +198,39 @@ Then users should be able to access it via a public URL
 ```
 ---
 ---
-# 11 Project documentation 
 
+## 11 User Story: Research Authentication in React and Express
+**As a** full-stack developer  
+**I need** to research authentication methods in React and Express  
+**So that** I can implement a secure and efficient authentication system for my applications  
+
+## Details and Assumptions  
+- Authentication methods include session-based authentication, JWT (JSON Web Tokens), OAuth, and third-party authentication providers.  
+- Research will cover user registration, login, logout, session management, and token storage.  
+- Consideration for security best practices such as password hashing, CSRF protection, and secure cookie handling.  
+- Explore authentication libraries such as `bcrypt`, `jsonwebtoken`, `passport.js`, and `express-session`.  
+- Research front-end token management strategies, such as storing JWT in `localStorage`, `sessionStorage`, or HTTP-only cookies.  
+- Evaluate trade-offs between client-side vs. server-side authentication mechanisms.  
+
+## Acceptance Criteria  
+
+```gherkin
+Given that authentication is required for user access  
+When I research authentication in React and Express  
+Then I should be able to document different authentication methods and their implementation steps  
+
+Given that security is a major concern  
+When I analyze authentication best practices  
+Then I should be able to outline strategies to prevent security vulnerabilities  
+
+Given that various libraries exist for authentication  
+When I evaluate their pros and cons  
+Then I should be able to select the most suitable authentication approach for my project  
+```
+---
+---
+
+# 12 Project documentation 
 **As a** Full-Stack Developer  
 **I need** a structured and accessible documentation system for user projects  
 **So that** users can easily refer to technical specifications, API endpoints, deployment processes, and troubleshooting guides to maintain and extend their projects effectively.  
