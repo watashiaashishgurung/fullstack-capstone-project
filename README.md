@@ -19,22 +19,6 @@ The application includes the following features:
 - **Containerization & Deployment**: Docker, Kubernetes, IBM Cloud
 - **DevOps Practices**: GitHub Actions, CI/CD
 
-## User Stories
-### As a User
-1. **As a donor**, I want to list household items I no longer need so that others can find and take them for free.
-2. **As a recipient**, I want to search for available items based on my needs and location so that I can find items that match my preferences.
-3. **As a user**, I want to create an account and log in securely so that my profile, listings, and interactions are saved.
-4. **As a user**, I want to edit my profile information so that I can update my contact details and preferences.
-5. **As a user**, I want to communicate with item donors via a secure messaging system so that I can arrange pickups.
-6. **As a user**, I want to view detailed descriptions and images of items before requesting them so that I can make informed decisions.
-7. **As a user**, I want to leave reviews and feedback on donors and recipients so that I can help maintain a trustworthy community.
-8. **As a user**, I want to be notified about new listings that match my preferences so that I don't miss out on items I need.
-
-### As an Admin
-1. **As an admin**, I want to monitor user activities and flagged items so that I can maintain a safe and respectful community.
-2. **As an admin**, I want to approve or remove listings that violate community guidelines so that I can ensure quality control.
-3. **As an admin**, I want to manage user accounts and ban rule-breaking users so that I can enforce platform policies.
-
 ## Project Modules
 ### Module 1 - Project Setup
 - Clone the repository and set up the project structure.
@@ -82,8 +66,121 @@ The GiftLink application follows a **structured directory architecture**, ensuri
  ┣ 📜 user-story.md (Kanban Documentation)
  ┗ ...
 ```
+---
+### Fullstack Capstone Project File-structure
 
-## How to Run the Project
+<details>
+  <summary>giftlink-backend</summary>
+  
+  - **models/**
+    - `db.js`
+  - **routes/**
+    - `auth.js`
+    - `authRoutes.js`
+    - `giftRoutes.js`
+    - `searchRoutes.js`
+  - **util/**
+  - **import-mongo/**
+    - `.env`
+    - `.gitignore`
+    - `gifts.json`
+    - `index.js`
+    - `package-lock.json`
+    - `package.json`
+    - `test-env.js`
+  - `.env`
+  - `.gitignore`
+  - `app.js`
+  - `logger.js`
+  - `package-lock.json`
+  - `package.json`
+</details>
+
+<details>
+  <summary>giftlink-frontend</summary>
+  
+  - **node_modules/**
+  - **public/**
+    - **images/**
+    - **static/**
+    - `favicon.ico`
+    - `home.html`
+    - `index.html`
+    - `logo192.png`
+    - `logo512.png`
+    - `manifest.json`
+    - `robots.txt`
+  - **src/**
+    - **components/**
+      - **DetailsPage/**
+        - `DetailsPage.css`
+        - `DetailsPage.js`
+      - **LandingPage/**
+        - `LandingPage.css`
+        - `LandingPage.js`
+      - **LoginPage/**
+        - `LoginPage.css`
+        - `LoginPage.js`
+      - **MainPage/**
+        - `MainPage.js`
+      - **Navbar/**
+        - `Navbar.js`
+      - **ProductDetailsPage/**
+        - `ProductDetailsPage.js`
+      - **Profile/**
+        - `Profile.css`
+        - `Profile.js`
+      - **RegisterPage/**
+        - `RegisterPage.css`
+        - `RegisterPage.js`
+      - **SearchPage/**
+        - `SearchPage.css`
+        - `SearchPage.js`
+    - **context/**
+      - `AuthContext.js`
+    - `App.css`
+    - `App.js`
+    - `config.js`
+    - `index.css`
+    - `index.js`
+</details>
+
+<details>
+  <summary>sentiment</summary>
+  
+- **`index.js`/**
+- **`package-lock.json`/**
+- **`package.json`/**
+</details>
+
+<details>
+  <summary> .gitignore</summary>
+
+- `.gitignore`
+</details>
+
+<details>
+  <summary> LICENSE</summary>
+
+- [`LICENSE`](./LICENSE)
+</details>
+
+<details>
+    <summary>README.md</summary>
+
+- [`README.md`](./README.md)
+
+
+</details>
+<details>
+  <summary>user-story.md</summary>
+
+- [`user-story.md`](user-story.md)
+</details>
+
+
+
+# How to Run the Project
 ### Prerequisites
 - Node.js & npm
 - MongoDB
@@ -121,16 +218,10 @@ The GiftLink application follows a **structured directory architecture**, ensuri
    docker run -p 3000:3000 giftlink
    ```
 
-## Contribution
-Contributions are welcome! To contribute:
-1. Fork the repository.
-2. Create a feature branch (`git checkout -b feature-name`).
-3. Commit changes (`git commit -m "Added feature"`).
-4. Push to the branch (`git push origin feature-name`).
-5. Create a Pull Request.
 
 ## License
-This project is licensed under the **MIT License**.
+This project is licensed under the [`LICENSE`](./LICENSE)
 
 ## Repository Link
 🔗 **[GiftLink GitHub Repository](https://github.com/watashiaashishgurung/fullstack-capstone-project.git)**
+
