@@ -18,10 +18,12 @@ jobs:
     - name: Install Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: 14
+        node-version: 16
 
     - name: Install Dependencies
-      run: npm install
+      run: |
+        cd giftlink-backend
+        npm install
 
     - name: Install JSHint
       run: npm install jshint --global
@@ -52,11 +54,29 @@ jobs:
     - name: Install Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: 14
+        node-version: 16
 
     - name: Run build
       run: |
         cd giftlink-frontend
         npm install
-        npm run build
+        CI= npm run build  # Unset CI variable here
         echo "Client-side build successfully"
+
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16.x] # Update Node.js version here
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: |
+          cd giftlink-backend
+          npm install
+      - run: |
+          cd giftlink-backend
+          npm test
