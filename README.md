@@ -1,5 +1,6 @@
 # GiftLink - Full Stack Capstone Project
-
+## Kanban Board
+Track the project's progress on the [GiftLink Kanban Board](https://github.com/users/watashiaashishgurung/projects/12/views/1).
 ## Project Overview
 GiftLink is a full-stack web application designed to connect users who wish to give away household items they no longer need with users who enjoy recycling and prefer finding free household items that match their tastes rather than purchasing new ones.
 
@@ -56,6 +57,7 @@ The GiftLink application follows a **structured directory architecture**, ensuri
 
 ```
 📂 fullstack-capstone-project
+ ┣ 📂 ISSUE_TEMPLATE
  ┣ 📂 giftlink-backend (Express Backend)
  ┣ 📂 giftlink-frontend (React Frontend)
  ┣ 📂 sentiment (Sentiment Analysis Services)
@@ -63,12 +65,16 @@ The GiftLink application follows a **structured directory architecture**, ensuri
  ┣ 🔐 LICENSE
  ┣ 📜 Dockerfile (Containerization)
  ┣ 📜 README.md (Project Documentation)
- ┣ 📜 user-story.md (Kanban Documentation)
- ┗ ...
+ 
 ```
 ---
 ### Fullstack Capstone Project File-structure
 
+<details>
+  <summary>ISSUE_TEMPLATE</summary>
+
+- [`user-story.md`](user-story.md)
+</details>
 <details>
   <summary>giftlink-backend</summary>
   
@@ -143,7 +149,7 @@ The GiftLink application follows a **structured directory architecture**, ensuri
     - `config.js`
     - `index.css`
     - `index.js`
-</details>
+   </details>
 
 <details>
   <summary>sentiment</summary>
@@ -151,32 +157,25 @@ The GiftLink application follows a **structured directory architecture**, ensuri
 - **`index.js`/**
 - **`package-lock.json`/**
 - **`package.json`/**
-</details>
+   </details>
 
 <details>
   <summary> .gitignore</summary>
 
 - `.gitignore`
-</details>
+   </details>
 
 <details>
   <summary> LICENSE</summary>
 
 - [`LICENSE`](./LICENSE)
-</details>
+   </details>
 
 <details>
     <summary>README.md</summary>
 
 - [`README.md`](./README.md)
-
-
-</details>
-<details>
-  <summary>user-story.md</summary>
-
-- [`user-story.md`](user-story.md)
-</details>
+   </details>
 
 
 
